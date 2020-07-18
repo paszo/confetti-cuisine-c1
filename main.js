@@ -32,7 +32,7 @@ router.get("/graph.png", (req, res) => {
 
 router.get("/people.jpg", (req, res) => {
     res.writeHead(httpStatus.OK, contentTypes.jpg);
-    utils.getFile("public/images/people.jpg");
+    utils.getFile("public/images/people.jpg", res);
 });
 
 router.get("/product.jpg", (req, res) => {
